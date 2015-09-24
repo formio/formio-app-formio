@@ -75,8 +75,8 @@
                 parent: name,
                 templateUrl: 'views/resource/edit.html',
                 controller: ['$scope', '$state', function ($scope, $state) {
-                  $scope.$on('formSubmission', function(event, submission) {
-                    $state.go(name + '.view', {id: submission._id});
+                  $scope.$on('formSubmission', function() {
+                    $state.go('home');
                   });
                 }]
               })
