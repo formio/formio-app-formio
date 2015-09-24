@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-body">
+        <div ng-if="todos.length == 0" class="alert alert-info" role="alert"> You currently do not have any
+          todos associated with your account. Click <strong>New To-Do</strong> to add one.
+        </div>
+        <table ng-if="todos.length > 0" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Modified</th>
+              <th>Created</th>
+              <th>Operations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-ng-repeat="todo in todos" ng-class="getStatus(todo)">
+              <td><a ui-sref="todo.view({id: todo._id})">{{ todo.data.title }}</a></td>
+              <td><span ng-if="!todo.data.status">Not Started</span><span ng-if="todo.data.status">{{ todo.data.status }}</span></td>
+              <td>{{ todo.modified | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
+              <td>{{ todo.created | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
+              <td>
+                <div class="button-group" style="display:flex;">
+                  <a ui-sref="todo.view({id: todo._id})" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span></a>&nbsp;
+                  <a ui-sref="todo.edit({id: todo._id})" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-edit"></span></a>&nbsp;
+                  <a ui-sref="todo.delete({id: todo._id})" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <bgf-pagination collection="todos" url="todosUrl" per-page="5" template-url="./views/pager.html"></bgf-pagination>
+      </div>
+      <div class="panel-footer"><a ui-sref="todoCreate()" class="btn btn-primary">
+        <i class="glyphicon glyphicon-plus"></i> New To-Do</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<ul class="nav nav-tabs">
+    <li role="presentation" ng-class="{active:isActive('movie.view')}"><a ui-sref="movie.view()">View</a></li>
+    <li role="presentation" ng-class="{active:isActive('movie.edit')}"><a ui-sref="movie.edit()">Edit</a></li>
+    <li role="presentation" ng-class="{active:isActive('movie.delete')}"><a ui-sref="movie.delete()">Delete</a></li>
+</ul>
+<div ui-view></div>
