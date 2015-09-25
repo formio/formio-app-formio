@@ -1,4 +1,4 @@
 angular.module('formioAppTodo').constant('AppConfig', {
-  appUrl: 'https://{{ path }}.form.io',
-  apiUrl: 'https://api.form.io'
+  appUrl: '{{ protocol }}://{{ path }}.{{ host }}',
+  apiUrl: '{{ protocol }}://api.{{ host }}'
 });
