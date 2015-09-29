@@ -1,5 +1,5 @@
 {
-  "name": "formioAppTodo",
+  "name": "formioApp",
   "version": "0.0.0",
   "dependencies": {
     "angular-sanitize": "~1.4.0",
