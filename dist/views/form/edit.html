@@ -14,7 +14,7 @@
   </div>
   <input type="hidden" ng-model="form.type"/>
   <div ng-include="'views/form/settings.html'"></div>
-  <form-builder src="formUrl" form="form"></form-builder>
+  <form-builder src="formUrl"></form-builder>
   <div class="form-group pull-right">
     <a class="btn btn-default" ng-click="cancel()">Cancel</a>
     <input type="submit" class="btn btn-primary" ng-click="saveForm()" value="{{formId ? 'Save' : 'Create'}} {{ capitalize(form.type)  }}" />
