@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('formioAppTodo')
+    .module('formioApp')
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment);

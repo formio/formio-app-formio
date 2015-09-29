@@ -1,10 +1,12 @@
 (function() {
   'use strict';
   angular
-    .module('formioAppTodo', [
+    .module('formioApp', [
       'ngSanitize',
       'ui.router',
       'ui.bootstrap',
+      'ui.bootstrap.alert',
+      'ngFormBuilder',
       'formio',
       'ngMap'
     ]);

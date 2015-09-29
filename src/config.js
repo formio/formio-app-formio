@@ -1,4 +1,4 @@
-angular.module('formioAppTodo').constant('AppConfig', {
-  appUrl: 'https://todoapp.form.io',
-  apiUrl: 'https://api.form.io'
+angular.module('formioApp').constant('AppConfig', {
+  appUrl: 'http://default.localhost:3000',
+  apiUrl: 'http://api.localhost:3000'
 });

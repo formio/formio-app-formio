@@ -1,7 +1,0 @@
-<h3>{{ resource.data.title }}</h3>
-<p>{{ resource.data.description }}</p>
-<p><strong>Phone: </strong> {{ resource.data.phoneNumber }}</p>
-<p><strong>Address: </strong> {{ resource.data.address.formatted_address }}</p>
-<map zoom="8" center="[{{ position.lat }}, {{ position.lng }}]">
-  <marker position="[{{ position.lat }}, {{ position.lng }}]" title="{{ resource.data.address.formatted_address }}" visible="true"></marker>
-</map>

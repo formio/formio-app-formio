@@ -12,8 +12,10 @@
     "moment": "~2.10.3",
     "animate.css": "~3.3.0",
     "angular": "~1.4.0",
-    "formio": "~0.1.9",
-    "ngmap": "~1.13.4"
+    "ngFormio": "formio/ngFormio#develop",
+    "ngmap": "~1.13.4",
+    "ngFormBuilder": "formio/ngFormBuilder#develop",
+    "lodash": "~3.10.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
