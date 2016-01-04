@@ -7,6 +7,7 @@
       'ui.bootstrap',
       'ui.bootstrap.alert',
       'ngFormBuilder',
+      'bgf.paginateAnything',
       'formio',
       'ngMap'
     ]);

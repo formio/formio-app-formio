@@ -1,7 +1,11 @@
 {
-  "title": "Default",
-  "name": "default",
-  "description": "Provides a simple User authentication system.",
+  "title": "Form Manager",
+  "name": "form-manager",
+  "description": "Provides a usable Form Management system.",
+  "preview": {
+    "url": "http://formio.github.io/formio-app-formio",
+    "repo": "https://github.com/formio/formio-app-formio"
+  },
   "roles": {
     "administrator": {
       "title": "Administrator",
