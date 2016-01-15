@@ -6,13 +6,13 @@
     "jquery": "~2.1.4",
     "angular-ui-router": "~0.2.15",
     "angular-bootstrap": "~1.0.3",
-    "moment": "~2.11.0",
+    "moment": "~2.11.1",
     "angular": "~1.4.8",
-    "ngmap": "~1.16.3",
+    "ngmap": "~1.16.7",
     "lodash": "~3.10.1",
-    "formio": "~0.5.4",
-    "ngFormBuilder": "~1.0.2",
-    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "formio": "~0.7.0",
+    "ngFormBuilder": "~1.1.4",
+    "bootstrap-sass": "~3.3.6",
     "angular-paginate-anything": "~4.1.2"
   },
   "devDependencies": {
