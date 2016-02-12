@@ -1,25 +1,25 @@
 {
   "name": "formioApp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
-    "angular-sanitize": "~1.4.8",
-    "jquery": "~2.1.4",
-    "angular-ui-router": "~0.2.15",
-    "angular-bootstrap": "~1.0.3",
-    "moment": "~2.11.1",
-    "angular": "~1.4.8",
+    "angular-sanitize": "^1.5.0",
+    "jquery": "^2.2.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-bootstrap": "^1.1.2",
+    "moment": "^2.11.2",
+    "angular": "^1.5.0",
     "ngmap": "~1.16.7",
-    "lodash": "~3.10.1",
-    "formio": "~0.7.0",
-    "ngFormBuilder": "~1.1.4",
-    "bootstrap-sass": "~3.3.6",
-    "angular-paginate-anything": "~4.1.2"
+    "lodash": "^4.3.0",
+    "bootstrap-sass": "^3.3.6",
+    "angular-paginate-anything": "^4.1.2",
+    "ng-formio": "^1.2.1",
+    "ng-formio-builder": "^1.7.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
   },
   "resolutions": {
     "jquery": "~2.1.4",
-    "angular": "~1.4.8"
+    "angular": "^1.5.0"
   }
 }
