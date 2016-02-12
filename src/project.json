@@ -3,7 +3,7 @@
   "name": "form-manager",
   "description": "Provides a usable Form Management system.",
   "preview": {
-    "url": "https://app.form.io/formio-app-formio/dist",
+    "url": "http://formio.github.io/formio-app-formio/dist",
     "repo": "https://github.com/formio/formio-app-formio"
   },
   "roles": {
