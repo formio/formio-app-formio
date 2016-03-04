@@ -407,6 +407,24 @@
     }
   },
   "actions": {
+    "userSave": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "user",
+      "handler": ["before"],
+      "method": ["create", "update"],
+      "priority": 11,
+      "settings": {}
+    },
+    "adminSave": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "admin",
+      "handler": ["before"],
+      "method": ["create", "update"],
+      "priority": 11,
+      "settings": {}
+    },
     "userLogin": {
       "name": "login",
       "title": "Login",
