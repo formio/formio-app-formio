@@ -1,7 +1,7 @@
 {
   "title": "Form Manager",
   "name": "form-manager",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Provides a usable Form Management system.",
   "preview": {
     "url": "https://app.form.io/formio-app-formio/dist",
@@ -420,25 +420,15 @@
         "password": "password"
       }
     },
-    "userLoginNoSubmit": {
-      "name": "nosubmit",
-      "title": "Skip Form Submission",
-      "form": "userLogin",
-      "priority": 0,
-      "handler": ["before"],
-      "method": ["create"],
-      "settings": {}
-    },
-    "userRegisterResource": {
-      "title": "Submit to another Resource",
-      "name": "resource",
+    "userRegisterSave": {
+      "title": "Save Submission",
+      "name": "save",
       "form": "userRegister",
       "handler": ["before"],
       "method": ["create"],
       "priority": 10,
       "settings": {
         "resource": "user",
-        "role": "authenticated",
         "fields": {
           "email": "email",
           "password": "password"
@@ -458,15 +448,6 @@
         "password": "password"
       }
     },
-    "userRegisterNoSubmit": {
-      "name": "nosubmit",
-      "title": "Skip Form Submission",
-      "form": "userRegister",
-      "priority": 0,
-      "handler": ["before"],
-      "method": ["create"],
-      "settings": {}
-    },
     "adminLogin": {
       "name": "login",
       "title": "Login",
@@ -479,15 +460,6 @@
         "username": "email",
         "password": "password"
       }
-    },
-    "adminLoginNoSubmit": {
-      "name": "nosubmit",
-      "title": "Skip Form Submission",
-      "form": "adminLogin",
-      "priority": 0,
-      "handler": ["before"],
-      "method": ["create"],
-      "settings": {}
     },
     "authenticatedRole": {
       "name": "role",
