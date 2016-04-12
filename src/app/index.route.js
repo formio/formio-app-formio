@@ -212,7 +212,7 @@
       ) {
         $scope.actionUrl = '';
         $scope.actionInfo = $stateParams.actionInfo || {settingsForm: {}};
-        $scope.action = {data: {settings: {}}};
+        $scope.action = {data: {settings: {}, condition: {}}};
         $scope.newAction = {name: '', title: 'Select an Action'};
         $scope.availableActions = {};
         $scope.addAction = function() {
