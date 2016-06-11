@@ -80,7 +80,7 @@
         FormioAlerts,
         $state
       ) {
-        $rootScope.adminLoginForm = AppConfig.appUrl + '/admin/login';
+        $rootScope.userLoginForm = AppConfig.appUrl + '/user/login';
 
         // Set the current user if it isn't provided.
         if (!$rootScope.user) {

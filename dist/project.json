@@ -340,70 +340,6 @@
           "type": "button"
         }
       ]
-    },
-    "adminLogin": {
-      "title": "Admin Login",
-      "type": "form",
-      "name": "adminLogin",
-      "path": "admin/login",
-      "access": [
-        {
-          "type": "read_all",
-          "roles": ["anonymous"]
-        }
-      ],
-      "submissionAccess": [
-        {
-          "type" : "create_own",
-          "roles" : ["anonymous"]
-        }
-      ],
-      "components": [
-        {
-          "type": "email",
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "Enter your email address",
-          "key": "email",
-          "lockKey": true,
-          "label": "Email",
-          "inputType": "email",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "type": "password",
-          "persistent": true,
-          "protected": true,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "Enter your password.",
-          "key": "password",
-          "lockKey": true,
-          "label": "Password",
-          "inputType": "password",
-          "tableView": false,
-          "input": true
-        },
-        {
-          "type": "button",
-          "theme": "primary",
-          "disableOnInvalid": true,
-          "action": "submit",
-          "block": false,
-          "rightIcon": "",
-          "leftIcon": "",
-          "size": "md",
-          "key": "submit",
-          "tableView": false,
-          "label": "Submit",
-          "input": true
-        }
-      ]
     }
   },
   "actions": {
@@ -433,7 +369,7 @@
       "method": ["create"],
       "handler": ["before"],
       "settings": {
-        "resources": ["user"],
+        "resources": ["user", "admin"],
         "username": "email",
         "password": "password"
       }
@@ -462,19 +398,6 @@
       "handler": ["before"],
       "settings": {
         "resources": ["user"],
-        "username": "email",
-        "password": "password"
-      }
-    },
-    "adminLogin": {
-      "name": "login",
-      "title": "Login",
-      "form": "adminLogin",
-      "priority": 2,
-      "method": ["create"],
-      "handler": ["before"],
-      "settings": {
-        "resources": ["admin"],
         "username": "email",
         "password": "password"
       }
