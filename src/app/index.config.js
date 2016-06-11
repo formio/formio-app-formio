@@ -9,6 +9,7 @@
         AppConfig,
         FormioProvider
       ) {
+        FormioProvider.setAppUrl(AppConfig.appUrl);
         FormioProvider.setBaseUrl(AppConfig.apiUrl);
       }
     ]);
