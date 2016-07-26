@@ -27,28 +27,28 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="#" onclick="window.location.reload(true)"><img src="assets/images/formio-logo.png" /></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ng-if="authenticated" class="active"><a href="#/">Home</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-if="authenticated"><a href="#" ng-click="logout()"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
     <div class="container">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand logo" href="#" onclick="window.location.reload(true)"><img src="assets/images/formio-logo.png" /></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li ng-if="authenticated" class="active"><a href="#/">Home</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li ng-if="authenticated"><a href="#" ng-click="logout()"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
       <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" ng-bind-html="alert.message"></uib-alert>
       <div ui-view></div>
     </div>
