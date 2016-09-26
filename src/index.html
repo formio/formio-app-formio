@@ -49,7 +49,7 @@
       </div><!--/.container -->
     </nav>
     <div class="container">
-      <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" ng-bind-html="alert.message"></uib-alert>
+      <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)" ng-bind-html="alert.message"></div>
       <div ui-view></div>
     </div>
 
