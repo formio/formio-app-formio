@@ -73,12 +73,16 @@
       'Formio',
       'FormioAlerts',
       '$state',
+      '$templateCache',
+      'FormioUtils',
       function(
         $rootScope,
         AppConfig,
         Formio,
         FormioAlerts,
-        $state
+        $state,
+        $templateCache,
+        FormioUtils
       ) {
         $rootScope.userLoginForm = AppConfig.appUrl + '/user/login';
 
@@ -138,6 +142,16 @@
         $rootScope.isActive = function(state) {
           return $state.current.name.indexOf(state) !== -1;
         };
+
+        $templateCache.put('formio/components/resourcefields.html', FormioUtils.fieldWrap(
+          '<formio-component component="resourceSelect" data="data"></formio-component>' +
+          '<formio-component ng-if="data.resource" component="propertyField" data="data"></formio-component>' +
+          '<fieldset ng-if="data.resource">' +
+          '<legend>Resource Fields</legend>' +
+          '<div class="well">Below are the fields within the selected resource. For each of these fields, select the corresponding field within this form that you wish to map to the selected Resource.</div>' +
+          '<formio-component ng-repeat="resourceComponent in resourceComponents" component="resourceComponent" data="data.fields"></formio-component>' +
+          '</fieldset>'
+        ));
       }
     ]);
 })();
