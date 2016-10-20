@@ -75,6 +75,14 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(path.join(conf.paths.dist, '/fonts/')));
 });
 
+gulp.task('ui-grid-fonts', function () {
+  return gulp.src([
+    'bower_components/ng-formio-grid/dist/*',
+  ])
+    .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
+    .pipe(gulp.dest(path.join(conf.paths.dist, '/styles/')));
+});
+
 gulp.task('other', function () {
   var fileFilter = $.filter(function (file) {
     return file.stat.isFile();
@@ -106,4 +114,4 @@ gulp.task('clean', function (done) {
   $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'views', 'config']);
+gulp.task('build', ['html', 'fonts', 'ui-grid-fonts', 'other', 'views', 'config']);

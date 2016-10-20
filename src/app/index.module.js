@@ -8,6 +8,8 @@
       'ui.bootstrap.accordion',
       'ui.bootstrap.alert',
       'ngFormBuilder',
+      'ngFormioHelper',
+      'ngFormBuilderHelper',
       'bgf.paginateAnything',
       'formio',
       'ngMap'

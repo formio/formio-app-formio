@@ -7,10 +7,14 @@ location.search.substr(1).split("&").forEach(function(item) {
   query[item.split("=")[0]] = item.split("=")[1] && decodeURIComponent(item.split("=")[1]);
 });
 
-APP_URL = query.appUrl || APP_URL;
-API_URL = query.apiUrl || API_URL;
+var appUrl = query.appUrl || APP_URL;
+var apiUrl = query.apiUrl || API_URL;
 
 angular.module('formioApp').constant('AppConfig', {
-  appUrl: APP_URL,
-  apiUrl: API_URL
+  appUrl: appUrl,
+  apiUrl: apiUrl,
+  forms: {
+    userForm: appUrl + '/user',
+    userLoginForm: appUrl + '/user/login'
+  }
 });
