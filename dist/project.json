@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "description": "Provides a usable Form Management system.",
   "preview": {
-    "url": "https://app.form.io/formio-app-formio/dist",
+    "url": "https://formio.github.io/formio-app-formio/dist",
     "repo": "https://github.com/formio/formio-app-formio"
   },
   "roles": {
