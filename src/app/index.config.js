@@ -6,11 +6,14 @@
       'AppConfig',
       'FormioProvider',
       'FormioAuthProvider',
+      '$locationProvider',
       function(
         AppConfig,
         FormioProvider,
-        FormioAuthProvider
+        FormioAuthProvider,
+        $locationProvider
       ) {
+        $locationProvider.hashPrefix('');
         FormioProvider.setAppUrl(AppConfig.appUrl);
         FormioProvider.setApiUrl(AppConfig.apiUrl);
         FormioAuthProvider.setForceAuth(true);
