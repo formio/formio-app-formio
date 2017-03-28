@@ -13,6 +13,17 @@
         <div class="well" ng-show="!resourcesLoading">
           Resources are the objects within your Project. Example: User, Company, Vehicle, etc.
         </div>
+        <div class="form-inline" style="margin-bottom: 20px;">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">Search in</div>
+              <select name="resourcesSearchType" id="resourcesSearchType" ng-model="resourcesSearchType" ng-change="updateResourceSearch()" class="form-control" ng-options="type.name as type.title for type in searchTypes">
+              </select>
+              <div class="input-group-addon">:</div>
+              <input id="form-search" class="form-control" ng-model="resourcesSearch" ng-model-options="{ debounce: 200 }" ng-change="updateResourceSearch()" placeholder="Find a resource..." type="text">
+            </div>
+          </div>
+        </div>
         <table class="table table-striped">
           <tbody>
           <tr data-ng-repeat="resource in resources">
@@ -35,6 +46,7 @@
         <bgf-pagination
           collection="resources"
           url="resourcesUrl"
+          url-params="resourcesUrlParams"
           per-page="formsPerPage"
           template-url="formio-helper/pager.html"
           ></bgf-pagination>
@@ -58,6 +70,17 @@
         <div class="well" ng-show="!formsLoading">
           Forms serve as a composite input interface for Resources as well as free-form user input. Example: Login Form, Contact Form, etc.
         </div>
+        <div class="form-inline" style="margin-bottom: 20px;">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">Search in</div>
+              <select name="formsSearchType" id="formsSearchType" ng-model="formsSearchType" ng-change="updateFormSearch()" class="form-control" ng-options="type.name as type.title for type in searchTypes">
+              </select>
+              <div class="input-group-addon">:</div>
+              <input id="form-search" class="form-control" ng-model="formsSearch" ng-model-options="{ debounce: 200 }" ng-change="updateFormSearch()" placeholder="Find a form..." type="text">
+            </div>
+          </div>
+        </div>
         <table class="table table-striped">
           <tbody>
           <tr data-ng-repeat="form in forms">
@@ -80,6 +103,7 @@
         <bgf-pagination
           collection="forms"
           url="formsUrl"
+          url-params="formsUrlParams"
           per-page="formsPerPage"
           template-url="formio-helper/pager.html"
           ></bgf-pagination>
