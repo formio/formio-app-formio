@@ -19,7 +19,7 @@
               <div class="input-group-addon" style="width:20px;"><span class="glyphicon glyphicon-search"></span></div>
               <input id="form-search-resource" class="form-control" ng-model="resourcesSearch" ng-model-options="{ debounce: 200 }" ng-change="updateResourceSearch()" placeholder="Find a resource..." type="text">
               <span class="input-group-addon" style="padding-top: 0; padding-bottom: 0; width:100px;">
-                <select name="resourcesSearchType" id="resourcesSearchType" ng-model="resourcesSearchType" ng-change="updateResourceSearch()" class="form-control" ng-options="type.name as type.title for type in searchTypes" style="height: 2em; float:left; width:100%;"></select>
+                <select name="resourcesSearchType" id="resourcesSearchType" ng-model="resourcesSearchType" ng-change="updateResourceSearch()" class="form-control" ng-options="type.name as type.title for type in searchTypes" style="height: 2em; float:left; width:100%; padding:0;"></select>
               </span>
             </div>
           </div>
@@ -76,7 +76,7 @@
               <span class="input-group-addon" style="width:20px;"><span class="glyphicon glyphicon-search"></span></span>
               <input id="form-search-form" class="form-control" ng-model="formsSearch" ng-model-options="{ debounce: 200 }" ng-change="updateFormSearch()" placeholder="Find a form..." type="text">
               <span class="input-group-addon" style="padding-top: 0;padding-bottom: 0;width:100px;">
-                <select name="formsSearchType" id="formsSearchType" ng-model="formsSearchType" ng-change="updateFormSearch()" class="form-control" ng-options="type.name as type.title for type in searchTypes" style="height:2em;float:left;width:100%;"></select>
+                <select name="formsSearchType" id="formsSearchType" ng-model="formsSearchType" ng-change="updateFormSearch()" class="form-control" ng-options="type.name as type.title for type in searchTypes" style="height:2em;float:left;width:100%;padding:0;"></select>
               </span>
             </div>
           </div>
