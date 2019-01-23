@@ -1,6 +1,6 @@
 {
   "name": "formio-app-formio",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "scripts": {
     "test": "gulp test"
   },
@@ -8,13 +8,13 @@
     "docRoot": "dist"
   },
   "devDependencies": {
-    "browser-sync": "~2.7.12",
+    "browser-sync": "^2.26.3",
     "browser-sync-spa": "~1.0.2",
     "chalk": "~1.0.0",
     "concat-stream": "~1.5.0",
     "del": "~1.2.0",
     "gulp": "~3.9.0",
-    "gulp-angular-filesort": "~1.1.1",
+    "gulp-angular-filesort": "^1.2.1",
     "gulp-angular-templatecache": "~1.6.0",
     "gulp-autoprefixer": "~2.3.1",
     "gulp-csso": "~1.0.0",
@@ -26,7 +26,7 @@
     "gulp-minify-html": "~1.0.3",
     "gulp-ng-annotate": "~1.0.0",
     "gulp-protractor": "~1.0.0",
-    "gulp-rename": "~1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-replace": "~0.5.3",
     "gulp-rev": "~5.0.0",
     "gulp-rev-replace": "~0.4.2",
@@ -37,14 +37,14 @@
     "gulp-useref": "~1.2.0",
     "gulp-util": "~3.0.5",
     "http-proxy-middleware": "~0.0.5",
-    "jshint-stylish": "~2.0.0",
+    "jshint-stylish": "^2.2.1",
     "karma": "^2.0.2",
     "karma-angular-filesort": "^1.0.2",
     "karma-jasmine": "^1.1.2",
     "karma-ng-html2js-preprocessor": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "lodash": "~3.9.3",
-    "main-bower-files": "~2.8.0",
+    "main-bower-files": "^2.13.1",
     "merge-stream": "~0.1.7",
     "require-dir": "~0.3.0",
     "uglify-save-license": "~0.4.1",
@@ -54,5 +54,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
 }
