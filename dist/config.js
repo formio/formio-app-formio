@@ -1,5 +1,5 @@
-var APP_URL = 'http://localhost:3001';
-var API_URL = 'http://localhost:3001';
+var APP_URL = 'https://example.form.io';
+var API_URL = 'https://api.form.io';
 
 // Parse query string
 var query = {};
