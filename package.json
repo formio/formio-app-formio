@@ -8,7 +8,7 @@
     "docRoot": "dist"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "browser-sync-spa": "~1.0.2",
     "chalk": "~1.0.0",
     "concat-stream": "~1.5.0",
@@ -38,7 +38,7 @@
     "gulp-util": "~3.0.5",
     "http-proxy-middleware": "~0.0.5",
     "jshint-stylish": "^2.2.1",
-    "karma": "^2.0.2",
+    "karma": "^6.4.1",
     "karma-angular-filesort": "^1.0.2",
     "karma-jasmine": "^1.1.2",
     "karma-ng-html2js-preprocessor": "^1.0.0",
