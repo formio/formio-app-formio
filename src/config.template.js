@@ -8,7 +8,7 @@ var API_URL = '{{ protocol }}://api.{{ host }}';
 
 // Parse query string
 var query = {};
-location.search.substr(1).split("&").forEach(function(item) {
+location.search.substring(1).split("&").forEach(function(item) {
   query[item.split("=")[0]] = item.split("=")[1] && decodeURIComponent(item.split("=")[1]);
 });
 
